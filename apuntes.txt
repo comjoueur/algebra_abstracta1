@@ -1,0 +1,13 @@
+strcpy(array,p.c_str());//convert string to array
+string p(array);//convert array to string
+transform(data.begin(), data.end(), data.begin(), ::toupper);//mayuscula
+transform(data.begin(), data.end(), data.begin(), ::tolower);//minuscula
+string.find(string,posicion_buscar);//buscar
+string s = to_string(42);//convertir numero a string
+string();
+string (const string& str);
+string (const string& str, size_t pos, size_t len = npos);
+string (const char* s);
+string (const char* s, size_t n);
+string (size_t n, char c);
+
