@@ -13,6 +13,7 @@ string Descifrar1(string p){
 }
 string Cifrar2(string p,int clave){
 	string rsp;
+	//while(p%(clave-1)!=1)p+='x';
 	for(int i=0;i<clave;i++){
 		int j=i;
 		bool x=1;
