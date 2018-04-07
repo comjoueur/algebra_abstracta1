@@ -62,13 +62,12 @@ int main() {
   char oracion[1000];
   cin.getline(oracion,1000);
 	string p(oracion);
-	p=Cifrar1(p);
+	int clave;
+	cout<<"ingrese la clave"<<endl;
+	cin>>clave;
+	p=Cifrar2(Cifrar1(p),clave);
 	cout<<p<<endl;
-	p=Descifrar1(p);
-	cout<<p<<endl;
-	p=Cifrar2(p,4);
-	cout<<p<<endl;
-	p=Descifrar2(p,4);
+	p=Descifrar1(Descifrar2(p,clave));
 	cout<<p<<endl;
 	return 0;
 }
